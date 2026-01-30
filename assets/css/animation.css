@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.animation {
+  position: relative;
+  display: flex;
+}
+.group {
+  display: flex;
+  gap: 20px;
+}
+.group-lower {
+  position: absolute;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #000;
+  animation: rotage linear 2s infinite;
+}
+.dot-upper:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot-upper:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.dot-upper:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.dot-upper:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.dot-lower {
+  animation-delay: -1s;
+}
+.dot-lower:nth-child(2) {
+  animation-delay: -0.8s;
+}
+.dot-lower:nth-child(3) {
+  animation-delay: -0.6s;
+}
+.dot-lower:nth-child(4) {
+  animation-delay: -0.4s;
+}
+.dot-lower:nth-child(5) {
+  animation-delay: -0.2s;
+}
+
+@keyframes rotage {
+  0%,
+  100% {
+    transform: translateY(-40px);
+    scale: 1;
+    opacity: 1;
+  }
+  25%{
+    transform: translateY(-20px);
+    scale: 1.15;
+  }
+  50%{
+    transform: translateY(0);
+    scale: 1;
+  }
+  62.5%{
+    opacity: 0.7;
+  }
+  75%{
+    transform: translateY(-20px);
+    scale: 0.85;
+    opacity: 0.3;
+  }
+}
