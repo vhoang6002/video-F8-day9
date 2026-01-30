@@ -34,6 +34,12 @@ body {
 .dot-upper:nth-child(5) {
   animation-delay: 0.8s;
 }
+.dot-upper:nth-child(6) {
+  animation-delay: 1s;
+}
+.dot-upper:nth-child(7) {
+  animation-delay: 1.2s;
+}
 
 .dot-lower {
   animation-delay: -1s;
@@ -49,6 +55,12 @@ body {
 }
 .dot-lower:nth-child(5) {
   animation-delay: -0.2s;
+}
+.dot-lower:nth-child(6) {
+  animation-delay: 0s;
+}
+.dot-lower:nth-child(7) {
+  animation-delay: 0.2s;
 }
 
 @keyframes DNA {
