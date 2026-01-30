@@ -20,7 +20,7 @@ body {
   height: 14px;
   border-radius: 50%;
   background-color: #000;
-  animation: rotage linear 2s infinite;
+  animation: DNA linear 2s infinite;
 }
 .dot-upper:nth-child(2) {
   animation-delay: 0.2s;
@@ -51,25 +51,25 @@ body {
   animation-delay: -0.2s;
 }
 
-@keyframes rotage {
+@keyframes DNA {
   0%,
   100% {
     transform: translateY(-40px);
     scale: 1;
     opacity: 1;
   }
-  25%{
+  25% {
     transform: translateY(-20px);
     scale: 1.15;
   }
-  50%{
+  50% {
     transform: translateY(0);
     scale: 1;
   }
-  62.5%{
+  62.5% {
     opacity: 0.7;
   }
-  75%{
+  75% {
     transform: translateY(-20px);
     scale: 0.85;
     opacity: 0.3;
