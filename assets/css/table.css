@@ -1,0 +1,38 @@
+table {
+  margin: 20px auto 0;
+  width: 840px;
+}
+table,
+th,
+td,
+caption {
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+.heading th {
+  border: none;
+  text-align: center;
+}
+.main-lable {
+  width: 50%;
+}
+.name,
+.total {
+  font-weight: 700;
+}
+.name {
+  padding-left: 10px;
+}
+.right {
+  border-right: 3px solid #000;
+}
+tr,
+caption {
+  border: 3px solid #000;
+}
+caption {
+  border-bottom: none;
+}
+.data{
+    width: calc(50% / 4);
+}
